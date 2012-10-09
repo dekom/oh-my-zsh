@@ -94,4 +94,5 @@ PROMPT='
 %{$fg[cyan]%}%~ %{$reset_color%}%{$fg_bold[red]%}$(dekom_rvm)%{$reset_color%} $(git_prompt_short_sha)$(git_prompt_info)
 $(prompt_char) : '
 
-RPROMPT='${return_status}$(git_time_since_commit)$(git_prompt_status)%{$reset_color%}'
+#RPROMPT='${return_status}$(git_time_since_commit)$(git_prompt_status)%{$reset_color%}'
+RPROMPT='$(git_prompt_status)%{$reset_color%}'
